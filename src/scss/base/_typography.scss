@@ -3,27 +3,39 @@
 @font-face {
   font-family: "Outfit";
   font-weight: 0 900;
-  src: url("./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf");
+  src: url("/assets/fonts/Outfit/Outfit-VariableFont_wght.ttf");
 }
 
 @font-face {
-  font-family: "Big Shoulders Display";
+  font-family: "BigShouldersDisplay";
   font-weight: 0 900;
-  src: url("./assets/fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf");
+  src: url("/assets/fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf");
 }
 
 body {
-  font: 400 1rem / 1.625rem "Outfit", sans-serif;
-  color: black;
+  font: 300 1.125rem / 1.75rem "Outfit", sans-serif;
+  color: $clr-grey-500;
 }
 
-:where(h1, h2, h3, h4, h5, h6) {
-  font-family: "Big Shoulders Display";
+:where(h1, h2, h3, h4, h5, h6, button) {
+  font-family: "BigShouldersDisplay";
   font-weight: 900;
-  font-size: 2.5rem;
+  color: $clr-grey-900;
+  text-transform: uppercase;
 }
 
 :where(a) {
   color: inherit;
   text-decoration: none;
+}
+
+.intro {
+  &__title {
+    font-size: 3.5rem;
+    line-height: 3.4375rem;
+  }
+}
+
+.footer {
+  // color: $clr-white;
 }
