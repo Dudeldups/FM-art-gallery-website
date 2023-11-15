@@ -1,3 +1,8 @@
+import GalleryLogo from "../Icons/GalleryLogo";
+import FacebookIcon from "../Icons/FacebookIcon";
+import InstagramIcon from "../Icons/InstagramIcon";
+import XIcon from "../Icons/XIcon";
+
 import "./Footer.scss";
 
 interface FooterProps {
@@ -6,14 +11,29 @@ interface FooterProps {
 
 const Footer = ({ isColored }: FooterProps) => {
   return (
-    <footer className={`footer ${isColored ? "colored" : ""}`}>
-      <p className="footer__title">Modern Art Gallery</p>
-      <p className="footer__desc">
-        The Modern Art Gallery is free to all visitors and open seven days a
-        week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-      </p>
-      <div className="icon-container"></div>
-    </footer>
+    // colored class changes from black background to orange
+
+    <div className={`footer-container ${isColored ? "colored" : ""}`}>
+      <footer className="footer">
+        <GalleryLogo />
+        <p className="footer__desc">
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+
+        <div className="icon-container">
+          <a href="#">
+            <FacebookIcon />
+          </a>
+          <a href="#">
+            <InstagramIcon />
+          </a>
+          <a href="#">
+            <XIcon />
+          </a>
+        </div>
+      </footer>
+    </div>
   );
 };
 

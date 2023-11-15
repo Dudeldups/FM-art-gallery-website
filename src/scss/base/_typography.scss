@@ -39,7 +39,17 @@ body {
 .footer {
   color: $clr-white;
 
-  &.colored {
+  .colored & {
     color: $clr-grey-900;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    line-height: 1.625rem;
+
+    @include mq($bp-tablet) {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
   }
 }

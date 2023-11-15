@@ -6,16 +6,13 @@ $clr-bg-main: #fefcf7;
 $clr-primary-500: #d5966c;
 $clr-primary-300: lighten($clr-primary-500, 10);
 
-$clr-secondary-500: #fdd6ba;
-$clr-secondary-300: #f4f1eb;
-
 $clr-grey-900: #151515;
 $clr-grey-500: #444;
 $clr-white: #fff;
 
 // breakpoints
 
-$bp-tablet: 740px;
+$bp-tablet: 700px;
 $bp-desktop: 980px;
 
 // sizing
@@ -31,4 +28,4 @@ $padding-inline-content: get-clamp(
 
 $padding-inner-desktop: 5.3rem;
 
-// $max-width-content: 1280px;
+$max-width-content: 1110px;
