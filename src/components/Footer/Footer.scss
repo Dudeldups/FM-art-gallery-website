@@ -1,0 +1,13 @@
+@use "../../scss/abstracts/" as *;
+
+.footer {
+  background-color: $clr-grey-900;
+
+  &.colored {
+    background-color: $clr-primary-500;
+  }
+}
+
+.icon {
+  fill: blue;
+}

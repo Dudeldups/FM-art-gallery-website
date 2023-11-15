@@ -37,5 +37,9 @@ body {
 }
 
 .footer {
-  // color: $clr-white;
+  color: $clr-white;
+
+  &.colored {
+    color: $clr-grey-900;
+  }
 }

@@ -1,12 +1,1 @@
 @use "../abstracts/" as *;
-
-.main-button {
-  background: $clr-grey-900;
-  color: $clr-white;
-  text-transform: uppercase;
-  padding: 1.5rem 2rem;
-  font-size: 1.25rem;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 0.22725rem;
-}
