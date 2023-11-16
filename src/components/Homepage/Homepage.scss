@@ -1,1 +1,94 @@
 @use "../../scss/abstracts/" as *;
+
+.intro,
+.gallery {
+  @include max-width-content;
+}
+
+.intro {
+  display: grid;
+  gap: 2rem;
+
+  @include mq($bp-tablet) {
+    grid-template-columns: repeat(30, 1fr);
+    gap: 0;
+  }
+
+  &__image {
+    @include mq($bp-tablet) {
+      grid-row: 1;
+      grid-column: 13 / span 15;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 21.1875rem;
+    padding-inline: 1rem;
+
+    @include mq($bp-tablet) {
+      grid-row: 1;
+      grid-column: 1 / span 15;
+
+      gap: 3rem;
+    }
+
+    @include mq($bp-desktop) {
+      max-width: 21.875rem;
+    }
+  }
+}
+
+.gallery {
+  padding: 7.5rem 1rem;
+
+  @include mq($bp-tablet) {
+    padding-inline: 2.5rem;
+  }
+
+  @include mq($bp-desktop) {
+    padding-block: 11.25rem;
+  }
+
+  &__container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.55rem;
+
+    @include mq($bp-tablet) {
+      flex-direction: row-reverse;
+      gap: 4.25rem;
+    }
+  }
+
+  &__container2 {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  &__blackTextBox {
+    padding: 3rem 1.5rem;
+    background-color: $clr-grey-900;
+  }
+
+  &__text {
+    @include mq($bp-tablet) {
+      max-width: 13.9375rem;
+    }
+
+    @include mq($bp-desktop) {
+      max-width: 21.875rem;
+    }
+  }
+
+  &__desc {
+    margin-top: 1.5rem;
+  }
+
+  @include mq($bp-tablet) {
+    margin-top: 2rem;
+  }
+}

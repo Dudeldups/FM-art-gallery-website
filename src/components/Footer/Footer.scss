@@ -68,6 +68,7 @@
   }
 }
 
+//social icons
 .icon {
   color: white;
 
@@ -76,7 +77,13 @@
   }
 }
 
+//focus states for social icons
 .icon-link:hover .icon,
 .icon-link:focus-visible .icon {
   color: $clr-primary-500;
+}
+
+.colored .icon-link:hover .icon,
+.colored .icon-link:focus-visible .icon {
+  color: $clr-white;
 }

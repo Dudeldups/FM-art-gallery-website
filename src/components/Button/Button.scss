@@ -2,12 +2,14 @@
 
 .modal-button {
   display: flex;
+  background-color: transparent;
 
   &__text {
     background: $clr-grey-900;
     color: $clr-white;
     text-transform: uppercase;
-    padding: 1.5rem 2rem;
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
     font-size: 1.25rem;
     font-weight: 800;
     line-height: normal;
