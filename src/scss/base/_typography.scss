@@ -36,6 +36,41 @@ body {
   }
 }
 
+.location {
+  color: $clr-white;
+
+  @include mq($bp-desktop) {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+
+  &__title {
+    color: $clr-white;
+    font-size: 3.125rem;
+    line-height: 2.8125rem;
+    text-transform: uppercase;
+
+    @include mq($bp-desktop) {
+      font-size: 4.375rem;
+      line-height: 4.375rem;
+    }
+  }
+
+  &__street {
+    color: $clr-primary-500;
+    font-family: "BigShouldersDisplay";
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2rem;
+    text-transform: uppercase;
+
+    @include mq($bp-desktop) {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+    }
+  }
+}
+
 .footer {
   color: $clr-white;
 
