@@ -2,6 +2,11 @@
 
 .footer-container {
   background-color: $clr-grey-900;
+  padding: 3rem 2rem;
+
+  @include mq($bp-tablet) {
+    padding: 3.5rem 2.5rem;
+  }
 
   &.colored {
     background-color: $clr-primary-500;
@@ -12,14 +17,12 @@
   display: flex;
   flex-direction: column;
   gap: 2.38rem;
-  padding: 3rem 2rem;
   @include max-width-content;
 
   @include mq($bp-tablet) {
     flex-direction: row;
     align-items: flex-start;
     gap: 4rem;
-    padding: 3.5rem 2.5rem;
   }
 
   @include mq($bp-desktop) {

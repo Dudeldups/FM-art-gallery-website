@@ -14,19 +14,22 @@ interface ModalProps {
 export default function Modal({ setIsModalShown }: ModalProps) {
   return (
     <section className="modal">
-      <picture>
-        <source srcSet={desktopMapImage} media="(min-width: 61.25rem)" />
-        <source srcSet={tabletMapImage} media="(min-width: 43.75rem)" />
-        <source srcSet={mobileBigMapImage} media="(min-width: 23.5rem)" />
+      <div className="map-container">
+        <picture className="modal__map-image">
+          <source srcSet={desktopMapImage} media="(min-width: 61.25rem)" />
+          <source srcSet={tabletMapImage} media="(min-width: 43.75rem)" />
+          <source srcSet={mobileBigMapImage} media="(min-width: 23.5rem)" />
 
-        <img
-          className="modal__map-image"
-          src={mobileSmallMapImage}
-          alt="A map for the location of the gallery at 99 King Street, Newport, USA."
-        />
-      </picture>
+          <img
+            src={mobileSmallMapImage}
+            alt="A map for the location of the gallery at 99 King Street, Newport, USA."
+          />
+        </picture>
 
-      <Button setIsModalShown={setIsModalShown} isPrimary={false} />
+        <div className="button-container">
+          <Button setIsModalShown={setIsModalShown} isPrimary={false} />
+        </div>
+      </div>
 
       <div className="location-bg">
         <div className="location">
