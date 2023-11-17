@@ -88,4 +88,6 @@
   color: $clr-white;
 }
 
-// TODO: color transitions for icons
+.icon {
+  transition: color 0.3s ease;
+}

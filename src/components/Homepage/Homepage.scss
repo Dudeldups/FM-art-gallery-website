@@ -5,6 +5,18 @@
   @include max-width-content;
 }
 
+.intro-container {
+  @include mq($bp-desktop) {
+    background: linear-gradient(
+      to right,
+      $clr-grey-900 0%,
+      $clr-grey-900 50%,
+      white 50%,
+      white 100%
+    );
+  }
+}
+
 .intro {
   display: grid;
   gap: 2rem;
@@ -20,11 +32,14 @@
       grid-row: 1;
       grid-column: 1 / span 21;
     }
+
+    @include mq($bp-desktop) {
+      grid-column: 13 / span 16;
+    }
   }
 
   &__text {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 2rem;
     max-width: 21.1875rem;
     padding-inline: 1rem;
@@ -36,7 +51,24 @@
     }
 
     @include mq($bp-desktop) {
-      max-width: 21.875rem;
+      grid-column: 1 / -1;
+      grid-template-columns: repeat(40, 1fr);
+    }
+  }
+
+  &__title {
+    @include mq($bp-desktop) {
+      max-width: 28rem;
+      grid-row: 1 / span 2;
+      grid-column: 1 / span 11;
+      mix-blend-mode: difference;
+    }
+  }
+
+  &__desc {
+    @include mq($bp-desktop) {
+      grid-row: 1;
+      grid-column: 30 / -1;
     }
   }
 }

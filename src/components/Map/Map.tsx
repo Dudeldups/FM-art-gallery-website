@@ -17,6 +17,10 @@ export default function Map() {
         attribution: "© OpenStreetMap contributors",
       }).addTo(map);
 
+      map.zoomControl.remove();
+      const zoomControl = L.control.zoom({ position: "bottomleft" });
+      zoomControl.addTo(map);
+
       const customIcon = L.icon({
         iconUrl: CustomMarker,
       });

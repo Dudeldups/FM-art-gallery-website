@@ -29,26 +29,28 @@ interface HomepageProps {
 export default function Homepage({ setIsModalShown }: HomepageProps) {
   return (
     <>
-      <header className="intro">
-        <picture className="intro__image">
-          <source srcSet={introImageDesktop} media="(min-width: 61.25rem)" />
-          <source srcSet={introImageTablet} media="(min-width: 43.75rem)" />
-          <source srcSet={introImageMobile} media="(min-width: 23.5rem)" />
+      <header className="intro-container">
+        <div className="intro">
+          <picture className="intro__image">
+            <source srcSet={introImageDesktop} media="(min-width: 61.25rem)" />
+            <source srcSet={introImageTablet} media="(min-width: 43.75rem)" />
+            <source srcSet={introImageMobile} media="(min-width: 23.5rem)" />
 
-          <img
-            src={introImageBase}
-            alt="A man and a woman are looking at a black and white drawing of an elderly woman."
-          />
-        </picture>
+            <img
+              src={introImageBase}
+              alt="A man and a woman are looking at a black and white drawing of an elderly woman."
+            />
+          </picture>
 
-        <div className="intro__text">
-          <h2 className="intro__title">Modern Art Gallery</h2>
-          <p className="intro__desc">
-            The arts in the collection of the Modern Art Gallery all started
-            from a spark of inspiration. Will these pieces inspire you? Visit us
-            and find out.
-          </p>
-          <Button setIsModalShown={setIsModalShown} isPrimary={true} />
+          <div className="intro__text">
+            <h2 className="intro__title">Modern Art Gallery</h2>
+            <p className="intro__desc">
+              The arts in the collection of the Modern Art Gallery all started
+              from a spark of inspiration. Will these pieces inspire you? Visit
+              us and find out.
+            </p>
+            <Button setIsModalShown={setIsModalShown} isPrimary={true} />
+          </div>
         </div>
       </header>
 
