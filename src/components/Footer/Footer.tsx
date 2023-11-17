@@ -12,7 +12,6 @@ interface FooterProps {
 const Footer = ({ isColored }: FooterProps) => {
   return (
     // colored class changes from black background to orange
-
     <div className={`footer-container ${isColored ? "colored" : ""}`}>
       <footer className="footer">
         <GalleryLogo />

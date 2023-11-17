@@ -71,7 +71,7 @@ export default function Homepage({ setIsModalShown }: HomepageProps) {
             />
           </picture>
 
-          <div className="gallery__text">
+          <div className="gallery__text text1">
             <h2 className="gallery__title">Your Day at the Gallery</h2>
             <p className="gallery__desc">
               Wander through our distinct collections and find new insights

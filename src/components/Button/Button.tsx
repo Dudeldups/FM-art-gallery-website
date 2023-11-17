@@ -9,10 +9,16 @@ interface ButtonProps {
 }
 
 const Button = ({ setIsModalShown, isPrimary }: ButtonProps) => {
+  const handleClick = (showModal: boolean) => {
+    setIsModalShown(showModal);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return isPrimary ? (
-    <button
-      className="modal-button primary"
-      onClick={() => setIsModalShown(true)}>
+    <button className="modal-button primary" onClick={() => handleClick(true)}>
       <span className="modal-button__text">Our location</span>
       <span className="modal-button__arrow" aria-hidden="true">
         <img src={rightArrow} alt="" />
@@ -21,7 +27,7 @@ const Button = ({ setIsModalShown, isPrimary }: ButtonProps) => {
   ) : (
     <button
       className="modal-button secondary"
-      onClick={() => setIsModalShown(false)}>
+      onClick={() => handleClick(false)}>
       <span className="modal-button__text">Back to home</span>
       <span className="modal-button__arrow" aria-hidden="true">
         <img src={leftArrow} alt="" />
