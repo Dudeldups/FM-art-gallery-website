@@ -56,6 +56,13 @@
     }
   }
 
+  &__innerText {
+    @include mq($bp-tablet) {
+      grid-row: 1;
+      grid-column: 16 / span 8;
+    }
+  }
+
   &__title {
     @include mq($bp-desktop) {
       max-width: 28rem;
@@ -66,9 +73,13 @@
   }
 
   &__desc {
+    margin-bottom: 3rem;
+
     @include mq($bp-desktop) {
       grid-row: 1;
       grid-column: 30 / -1;
+
+      margin-bottom: 4rem;
     }
   }
 }

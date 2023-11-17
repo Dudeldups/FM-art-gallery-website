@@ -44,12 +44,14 @@ export default function Homepage({ setIsModalShown }: HomepageProps) {
 
           <div className="intro__text">
             <h2 className="intro__title">Modern Art Gallery</h2>
-            <p className="intro__desc">
-              The arts in the collection of the Modern Art Gallery all started
-              from a spark of inspiration. Will these pieces inspire you? Visit
-              us and find out.
-            </p>
-            <Button setIsModalShown={setIsModalShown} isPrimary={true} />
+            <div className="intro__innerText">
+              <p className="intro__desc">
+                The arts in the collection of the Modern Art Gallery all started
+                from a spark of inspiration. Will these pieces inspire you?
+                Visit us and find out.
+              </p>
+              <Button setIsModalShown={setIsModalShown} isPrimary={true} />
+            </div>
           </div>
         </div>
       </header>
