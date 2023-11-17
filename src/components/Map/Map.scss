@@ -1,6 +1,17 @@
 @use "../../scss/abstracts/" as *;
 
 #map {
-  height: 25rem;
+  z-index: 1;
+  grid-area: 1 / 1;
+
   width: 100%;
+  aspect-ratio: 3/4;
+
+  @include mq($bp-tablet) {
+    aspect-ratio: 1/1;
+  }
+
+  @include mq($bp-desktop) {
+    aspect-ratio: 5/2;
+  }
 }
