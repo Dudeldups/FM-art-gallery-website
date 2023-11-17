@@ -6,6 +6,7 @@ import tabletMapImage from "../../assets/images/tablet/image-map@2x.png";
 import desktopMapImage from "../../assets/images/desktop/image-map@2x.png";
 
 import "./Modal.scss";
+import Map from "../Map/Map";
 
 interface ModalProps {
   setIsModalShown: React.Dispatch<React.SetStateAction<boolean>>;
@@ -30,6 +31,8 @@ export default function Modal({ setIsModalShown }: ModalProps) {
           <Button setIsModalShown={setIsModalShown} isPrimary={false} />
         </div>
       </div>
+
+      <Map />
 
       <div className="location-bg">
         <div className="location">
