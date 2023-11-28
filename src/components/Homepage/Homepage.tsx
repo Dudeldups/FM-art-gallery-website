@@ -1,3 +1,5 @@
+import { useInView } from "react-intersection-observer";
+
 import introImageDesktop from "/assets/images/desktop/image-hero@2x.jpg";
 import introImageTablet from "/assets/images/tablet/image-hero@2x.jpg";
 import introImageMobile from "/assets/images/mobile/image-hero@2x.jpg";
@@ -27,11 +29,27 @@ interface HomepageProps {
 }
 
 export default function Homepage({ setIsModalShown }: HomepageProps) {
+  const [introRef, introInView] = useInView({
+    triggerOnce: true,
+  });
+
+  const [gallery1Ref, gallery1InView] = useInView({
+    triggerOnce: true,
+    threshold: 0.4,
+  });
+
+  const [gallery2Ref, gallery2InView] = useInView({
+    triggerOnce: true,
+    threshold: 0.4,
+  });
+
   return (
     <>
       <header className="intro-container">
         <div className="intro">
-          <picture className="intro__image">
+          <picture
+            className={`intro__image ${introInView ? "show" : ""}`}
+            ref={introRef}>
             <source srcSet={introImageDesktop} media="(min-width: 61.25rem)" />
             <source srcSet={introImageTablet} media="(min-width: 43.75rem)" />
             <source srcSet={introImageMobile} media="(min-width: 23.5rem)" />
@@ -55,7 +73,9 @@ export default function Homepage({ setIsModalShown }: HomepageProps) {
       </header>
 
       <section className="gallery">
-        <div className="gallery__container1">
+        <div
+          className={`gallery__container1 ${gallery1InView ? "show" : ""}`}
+          ref={gallery1Ref}>
           <picture className="gallery__image1">
             <source
               srcSet={galleryImage1Desktop}
@@ -83,7 +103,9 @@ export default function Homepage({ setIsModalShown }: HomepageProps) {
           </div>
         </div>
 
-        <div className="gallery__container2">
+        <div
+          className={`gallery__container2 ${gallery2InView ? "show" : ""}`}
+          ref={gallery2Ref}>
           <picture className="gallery__image2">
             <source
               srcSet={galleryImage2Desktop}
