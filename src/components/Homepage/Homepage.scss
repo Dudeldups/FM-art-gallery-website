@@ -69,7 +69,7 @@
     }
 
     @include mq($bp-desktop) {
-      max-width: 28rem;
+      max-width: 28.05rem;
       grid-row: 1 / 3;
       grid-column: 3 / span 17;
       align-self: center;
@@ -156,12 +156,9 @@
 
     @include mq($bp-tablet) {
       align-items: center;
+      grid-template-rows: auto 1fr;
       grid-template-columns: 7fr 5fr;
-      gap: 0.7rem;
-    }
-
-    @include mq($bp-desktop) {
-      gap: 1.87rem;
+      gap: get-clamp(0.7rem, 1.87rem, $bp-tablet, $bp-desktop);
     }
 
     // for animation purposes
@@ -194,11 +191,15 @@
 
     @include mq($bp-tablet) {
       grid-area: 2 / 2 / 3 / 3;
-      align-self: end;
+      align-self: stretch;
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     @include mq($bp-desktop) {
-      padding: 3rem;
+      padding: get-clamp(1.8rem, 3rem, $bp-desktop, calc($bp-desktop * 1.2));
     }
   }
 
