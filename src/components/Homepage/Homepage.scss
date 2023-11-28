@@ -42,8 +42,8 @@
     }
 
     // for animation purposes
-    opacity: 0;
-    transform: translateY(-10%);
+    // opacity: 0;
+    // transform: translateY(-10%);
     transition: opacity 0.8s ease-out, transform 0.6s ease-out;
 
     @include mq($bp-desktop) {
@@ -127,8 +127,8 @@
     }
 
     // for animation purposes
-    opacity: 0;
-    transform: translateY(15%);
+    // opacity: 0;
+    // transform: translateY(15%);
     transition: opacity 0.8s ease-out, transform 0.6s ease-out;
 
     &.show {
@@ -162,8 +162,8 @@
     }
 
     // for animation purposes
-    opacity: 0;
-    transform: translateY(15%);
+    // opacity: 0;
+    // transform: translateY(15%);
     transition: opacity 0.8s ease-out, transform 0.6s ease-out;
 
     &.show {

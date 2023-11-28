@@ -21,13 +21,13 @@ const Footer = ({ isColored }: FooterProps) => {
         </p>
 
         <div className="icon-container">
-          <a className="icon-link" href="#">
+          <a className="icon-link" href="#" aria-label="facebook">
             <FacebookIcon />
           </a>
-          <a className="icon-link" href="#">
+          <a className="icon-link" href="#" aria-label="instagram">
             <InstagramIcon />
           </a>
-          <a className="icon-link" href="#">
+          <a className="icon-link" href="#" aria-label="twitter">
             <XIcon />
           </a>
         </div>
