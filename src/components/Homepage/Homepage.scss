@@ -2,7 +2,7 @@
 
 .intro,
 .gallery {
-  @include max-width-content;
+  @include max-width-content($add: 5rem);
 }
 
 .intro-container {

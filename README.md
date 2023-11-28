@@ -1,7 +1,3 @@
-# WIP 👾
-
----
-
 # Frontend Mentor - Art gallery website solution
 
 This is a solution to the [Art gallery website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/art-gallery-website-yVdrZlxyA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -29,7 +25,7 @@ Users should be able to:
 
 #### Added features
 
-- Colored the header on scroll so the page doesn't look too monotonous
+- Added the Leaflet JS Map, but it seems to be a bit buggy, moving the map and scrolling only works rarely. 😒
 
 ### Links
 
@@ -50,6 +46,7 @@ Users should be able to:
 - React (TypeScript)
 - React Router
 - SCSS
+- Leaflet JS
 
 ## Author
 
