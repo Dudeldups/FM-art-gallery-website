@@ -1,22 +1,22 @@
-import introImageDesktop from "../../assets/images/desktop/image-hero@2x.jpg";
-import introImageTablet from "../../assets/images/tablet/image-hero@2x.jpg";
-import introImageMobile from "../../assets/images/mobile/image-hero@2x.jpg";
-import introImageBase from "../../assets/images/mobile/image-hero.jpg";
+import introImageDesktop from "/assets/images/desktop/image-hero@2x.jpg";
+import introImageTablet from "/assets/images/tablet/image-hero@2x.jpg";
+import introImageMobile from "/assets/images/mobile/image-hero@2x.jpg";
+import introImageBase from "/assets/images/mobile/image-hero.jpg";
 
-import galleryImage1Desktop from "../../assets/images/desktop/image-grid-1@2x.jpg";
-import galleryImage1Tablet from "../../assets/images/tablet/image-grid-1@2x.jpg";
-import galleryImage1Mobile from "../../assets/images/mobile/image-grid-1@2x.jpg";
-import galleryImage1Base from "../../assets/images/mobile/image-grid-1.jpg";
+import galleryImage1Desktop from "/assets/images/desktop/image-grid-1@2x.jpg";
+import galleryImage1Tablet from "/assets/images/tablet/image-grid-1@2x.jpg";
+import galleryImage1Mobile from "/assets/images/mobile/image-grid-1@2x.jpg";
+import galleryImage1Base from "/assets/images/mobile/image-grid-1.jpg";
 
-import galleryImage2Desktop from "../../assets/images/desktop/image-grid-2@2x.jpg";
-import galleryImage2Tablet from "../../assets/images/tablet/image-grid-2@2x.jpg";
-import galleryImage2Mobile from "../../assets/images/mobile/image-grid-2@2x.jpg";
-import galleryImage2Base from "../../assets/images/mobile/image-grid-2.jpg";
+import galleryImage2Desktop from "/assets/images/desktop/image-grid-2@2x.jpg";
+import galleryImage2Tablet from "/assets/images/tablet/image-grid-2@2x.jpg";
+import galleryImage2Mobile from "/assets/images/mobile/image-grid-2@2x.jpg";
+import galleryImage2Base from "/assets/images/mobile/image-grid-2.jpg";
 
-import galleryImage3Desktop from "../../assets/images/desktop/image-grid-3@2x.jpg";
-import galleryImage3Tablet from "../../assets/images/tablet/image-grid-3@2x.jpg";
-import galleryImage3Mobile from "../../assets/images/mobile/image-grid-3@2x.jpg";
-import galleryImage3Base from "../../assets/images/mobile/image-grid-3.jpg";
+import galleryImage3Desktop from "/assets/images/desktop/image-grid-3@2x.jpg";
+import galleryImage3Tablet from "/assets/images/tablet/image-grid-3@2x.jpg";
+import galleryImage3Mobile from "/assets/images/mobile/image-grid-3@2x.jpg";
+import galleryImage3Base from "/assets/images/mobile/image-grid-3.jpg";
 
 import Button from "../Button/Button";
 

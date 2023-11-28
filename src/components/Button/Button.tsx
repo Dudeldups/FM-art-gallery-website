@@ -1,7 +1,7 @@
 import "./Button.scss";
 
-import rightArrow from "../../assets/images/icon-arrow-right.svg";
-import leftArrow from "../../assets/images/icon-arrow-left.svg";
+import rightArrow from "/assets/images/icon-arrow-right.svg";
+import leftArrow from "/assets/images/icon-arrow-left.svg";
 
 interface ButtonProps {
   setIsModalShown: React.Dispatch<React.SetStateAction<boolean>>;
