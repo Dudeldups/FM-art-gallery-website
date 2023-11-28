@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution on Frontend Mentor]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/reacttsscss-art-gallery-website-leafletjs-map-ZZemWfJPwD)
 
 - [Live site](https://art-gallery-9000.netlify.app/)
 
@@ -37,7 +37,7 @@ Users should be able to:
 
 #### Desktop
 
-![Solution]()
+![Solution](https://github.com/Dudeldups/FM-art-gallery-website/blob/main/screenshots/desktop.png)
 
 ## My process
 
